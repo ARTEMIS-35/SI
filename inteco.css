@@ -1,0 +1,25 @@
+header {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #fffbf0;
+    margin: auto;
+    width: 80%;
+}
+button{
+    position: absolute;
+    top:2%;
+    left:1%;
+    padding: 8px;
+    border-radius:8px;
+    background-color: #0073e6;
+    color: white;
+    border:none;
+} button a {
+    text-decoration: none;
+    color: white;
+}

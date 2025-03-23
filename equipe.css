@@ -1,0 +1,27 @@
+header {
+    
+    color: rgb(22, 21, 21);
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin: auto;
+    width: 80%;
+}
+
+button{
+    position: absolute;
+    top:2%;
+    left:1%;
+    padding: 8px;
+    border-radius:8px;
+    background-color: #0073e6;
+    color: white;
+    border:none;
+} button a {
+    text-decoration: none;
+    color: white;
+}

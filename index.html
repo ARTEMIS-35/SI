@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+
+<div class="banner">
+    <ul>
+        <li><a href="">Accueil</a></li>
+        <li class="dropdown">
+            <a href="#">Présentation</a>
+            <div class="dropdown-menu">
+                <div class="dropdown-item"><a href="hist.html">Historique</a></div>
+                <div class="dropdown-item"><a href="mission.html">Mission</a></div>
+                <div class="dropdown-item"><a href="equipe.html">Équipe</a></div>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Prestations</a>
+            <div class="dropdown-menu">
+                <div class="dropdown-item"><a href="Réseaux.html">Réseaux informatiques</a></div>
+                <div class="dropdown-item"><a href="Télécom.html">Télécommunications</a></div>
+                <div class="dropdown-item"><a href="Génie Logiciel.html">Génie Logiciel</a></div>
+                <div class="dropdown-item"><a href="inteco.html">Intelligence économique</a></div>
+                <div class="dropdown-item"><a href="Techinternet.html">Technologie Internet</a></div>
+                <div class="dropdown-item"><a href="Sécurité.html">Sécurité des SI</a></div>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Formations</a>
+            <div class="dropdown-menu">
+                <div class="dropdown-item"><a href="Certif.html">Certifications</a></div>
+                <div class="dropdown-item"><a href="Séminaires.html">Séminaires</a></div>
+                <div class="dropdown-item"><a href="Conférences.html">Conférences</a></div>
+                <div class="dropdown-item"><a href="Ateliers.html">Ateliers</a></div>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Partenaires</a>
+            <div class="dropdown-menu">
+                <div class="dropdown-item"> <a href="Nationaux.html">Nationaux</a></div>
+                <div class="dropdown-item"><a href="Internationaux.html">Internationaux</a></div>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Support</a>
+            <div class="dropdown-menu">
+                <div class="dropdown-item"><a href="Assistance.html">Assistance</a></div>
+                <div class="dropdown-item"><a href="Téléchargement.html">Téléchargement</a></div>
+            </div>
+        </li>
+        <li><a href="">Contacts</a></li>
+    </ul>
+</div>
+<nav>
+    <div class="LOGO">
+        <img src="orig_480x480.png">
+    </div>
+</nav>
+<h1>FORMULAIRES  <br>D'INSCRIPTION</h1>
+<span>NOS SERVICES</span>
+<div class="tab-container">
+    <div class="tabs">
+        <div class="tab active" onclick="switchTab(event, 'client-form')">Client</div>
+        <div class="tab" onclick="switchTab(event, 'fournisseur-form')">Fournisseur</div>
+        <div class="tab" onclick="switchTab(event, 'partenaire-form')">Partenaire</div>
+    </div>
+    
+    <div id="client-form" class="form-container active">
+        <h2>Formulaire Client</h2>
+        <input type="text" placeholder="Nom">
+        <input type="email" placeholder="Email">
+        <button>Soumettre</button>
+    </div>
+    
+    <div id="fournisseur-form" class="form-container">
+        <h2>Formulaire Fournisseur</h2>
+        <input type="text" placeholder="Entreprise">
+        <input type="email" placeholder="Email">
+        <button>Soumettre</button>
+    </div>
+    
+    <div id="partenaire-form" class="form-container">
+        <h2>Formulaire Partenaire</h2>
+        <input type="text" placeholder="Nom de l'organisation">
+        <input type="email" placeholder="Email">
+        <button>Soumettre</button>
+    </div>
+</div>
+<canvas id="canvas"></canvas>
+<div class="bar-lat" id="bar-lat">
+
+    <span id="open"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg></span>
+
+    <span id="close" style="display: none"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+      </svg></span>
+
+<ul>
+<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+</svg><p class="nb">profil</p></a></li>
+<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+  <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+  <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+</svg><p class="nb">paramètre</p></a></li>
+
+<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+</svg><p class="nb">accueil</p></a></li>
+
+<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+</svg><p class="nb">notifications</p></a></li> 
+</ul>
+
+        <h1 class="srv">NOS SERVICES</h1>
+</div>
+<div class="car" id="card-container">
+    <div class="wrap">
+            <div class="card"> 
+            <img src="cyber-security-technology-concept-shield-with-keyhole-icon-on-circuit-board-personal-data-vector.jpg" alt=""><h2>Cyber Securité</h2> <div class="info">Une protection de qualite contre <br>le monde du numérique</div></div>
+            <div class="card">
+            <img src="OIP.jpeg" alt=""> <h2>Maintenance</h2> <div class="info">Nos experts et nos machines de <br>dernières génération feront le renouveau <br>de vos apppareils</div> </div>
+            <div class="card"> 
+            <img src="pexels-pixabay-276452.jpg" alt=""><h2>Developpement logiciel</h2> <div class="info">Des experts agueris dans la progammation <br>et le developpement de vos Applications</div></div>
+            <div class="card"> 
+            <img src="5eafa544794c7bebce0ff2f99deca7c9.jpg" alt=""><h2>Reseaux et Telecommunication</h2><div class="info">Rester connecté avec vos différents<br>points de travail sans bouger laissez nous gérer</div></div>
+    </div>
+</div>
+
+
+<div class="slide">
+    <div class="slide-container">
+        <div class="S1"><img src="https://cdn.pixabay.com/photo/2023/07/19/06/19/ai-generated-8136172_1280.png" alt=""></div>
+        <div class="S2"> <img src="https://th.bing.com/th/id/R.2b59e76a46469c139fd37786e483d42f?rik=FtVL51EdGfWIPg&pid=ImgRaw&r=0" alt=""></div>
+        <div class="S3"><img src="https://www.topinvest.com.br/wp-content/uploads/2020/05/Global-Bonds-conheca-mais-uma-maneira-de-captar-recursos-do-exterior.jpg" alt=""></div>
+        <div class="S4"><img src="https://ai-techpark.com/wp-content/uploads/2022/06/19-Software-1536x864.jpg" alt=""></div>
+        <div class="S5"><img src="https://i.pinimg.com/736x/02/c3/b5/02c3b5e1d866df5d1f13f56caadf602e.jpg" alt=""></div>
+        <div class="S6"><img src="https://www.iclub-informatique.fr/wp-content/uploads/2020/07/iclub-informatique-slider-scaled.jpg" alt=""></div>
+        <div class="S7"><img src="https://i.pinimg.com/736x/eb/58/c1/eb58c120f8a34114597a645689308a10.jpg" alt=""></div>
+    </div>
+
+<button class="P" id="gauche">❮</button>
+<button class="P" id="droite">❯</button>
+</div>
+
+</div>
+<footer>
+    <ul>
+        <li> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+        </li>
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+        </li>
+    <li>   
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+            </svg>
+    </li>
+    <li>     
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+        </svg>
+    </li>
+
+    <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+        <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+      </svg>+225 0769520977 24H/24</pre></li>
+    </ul>
+
+   <P>©2025 SI All rights reserverd.</P> 
+</footer>
+<script src="index.js"></script>
+</script>
+</body>
+</html>
