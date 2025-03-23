@@ -7,8 +7,7 @@ body {
 }
 
 header {
-    background-color: #4682b4;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
 }
@@ -36,20 +35,20 @@ header p {
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
-    color: #2f4f4f;
+    color:  #0073e6;
 }
 
 .partner {
     margin-bottom: 20px;
     padding: 15px;
-    border-left: 5px solid #4682b4;
+    border-left: 5px solid  #0073e6;
     background: #f1f1f1;
     border-radius: 4px;
 }
 
 .partner h3 {
     margin-top: 0;
-    color: #4682b4;
+    color:  #0073e6;
 }
 
 
