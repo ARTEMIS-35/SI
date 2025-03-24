@@ -3,12 +3,19 @@ header {
     text-align: center;
     padding: 20px;
 }
-
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+}
 section {
+    margin: 20px;
     padding: 20px;
-    background-color: #e8f0fe;
-    margin: auto;
-    width: 80%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }button{
     position: absolute;
     top:2%;

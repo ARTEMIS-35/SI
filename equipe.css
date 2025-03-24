@@ -12,6 +12,23 @@ section {
     width: 80%;
 }
 
+.membres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.membre {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.membre h3 {
+    margin-top: 0;
+}
 button{
     position: absolute;
     top:2%;
